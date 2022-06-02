@@ -1,0 +1,12 @@
+SET SERVEROUTPUT ON;
+Declare
+x float;
+y float;
+z float;
+Begin
+x:=&x;
+y:=&y;
+z:=x+y;
+Dbms_output.put_line(z);
+End;
+/

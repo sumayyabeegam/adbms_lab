@@ -1,0 +1,13 @@
+SET SERVEROUTPUT ON;
+Declare
+   a number;
+PROCEDURE squareNum(x IN OUT number) IS
+BEGIN
+  x := x * x;
+END;
+BEGIN
+   a:= &n;
+   squareNum(a);
+   dbms_output.put_line(' Square of (2): ' ||  a);
+END;
+/
